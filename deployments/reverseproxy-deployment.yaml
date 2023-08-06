@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: redcafe/udagram-reverseproxy:latest
+        image: redcafe/reverseproxy:latest
         imagePullPolicy: IfNotPresent
         resources:
           requests:

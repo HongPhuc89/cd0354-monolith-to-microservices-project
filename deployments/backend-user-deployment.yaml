@@ -18,6 +18,13 @@ spec:
       - name: backend-user
         image: redcafe/udagram-api-user:latest
         imagePullPolicy: IfNotPresent
+        resources: 
+          requests: 
+            memory: "512Mi" 
+            cpu: "150m" 
+          limits: 
+            memory: "1024Mi" 
+            cpu: "300m"
         env:
         - name: URL
           valueFrom:
